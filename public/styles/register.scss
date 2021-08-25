@@ -1,0 +1,80 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+
+body {
+    background: whitesmoke;
+}
+
+i {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+nav {
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    padding: .5rem;
+    border-bottom: 1px solid grey;
+    background-color: orangered;
+    & .menu-left-wrapper {
+        display: flex;
+        gap: 1.1em;
+        &__company-name {
+            color: #fff;
+        }
+    }
+    & .menu-right-wrapper {
+        display: flex;
+        gap: 1.3em;
+                
+    }
+}
+
+.headline {
+    color: rgba(66, 66, 66, 0.849);
+    text-align: center;
+    margin: 1em;
+}
+
+#register-form {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    & label {
+        color: orangered;
+        padding: 0.5em;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+    }
+    & input {
+        width: 65%;
+        text-align: center;
+        padding: 0.5em;
+    }
+    & button {
+        margin-top: 2em;
+        width: 5em;
+        padding: 0.5em;
+        border-radius: 15%;
+        background: rgba(255, 68, 0, 0.87);
+        color: #fff;
+    }
+}
+
+
+.img-wrapper {
+    display: flex;
+    & img {
+        margin: 1em auto;
+        max-width: 100%;
+        opacity: 15%;
+    }
+}

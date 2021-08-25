@@ -1,0 +1,66 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+body {
+  background: whitesmoke;
+}
+
+i {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+nav {
+  margin: 0;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  padding: 0.5rem;
+  border-bottom: 1px solid grey;
+  background-color: orangered;
+}
+nav .menu-left-wrapper {
+  display: flex;
+  gap: 1.1em;
+}
+nav .menu-left-wrapper__company-name {
+  color: #fff;
+}
+nav .menu-right-wrapper {
+  display: flex;
+  gap: 1.3em;
+}
+
+.headline {
+  text-align: center;
+  padding: 0.7em;
+  background-color: #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
+.truck {
+  border: 1px solid rgba(128, 128, 128, 0);
+  width: 100vw;
+  padding: 3em;
+}
+.truck__img img {
+  width: 300px;
+  max-width: 100%;
+}
+.truck__choose-btn {
+  cursor: pointer;
+  background-color: #fff;
+  color: orangered;
+  font-weight: 600;
+  margin: 0.3em;
+  padding: 0.3em 0.6em;
+  border: 1px solid grey;
+}

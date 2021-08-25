@@ -1,0 +1,26 @@
+[
+    {
+        "Type": "Pickup",
+        "Purpose": "Small jobs",
+        "price": "29$",
+        "Image": "https://www.uhaul.com/Reservations/Images/Equipment/Trucks/uhaul-pickup-truck.png"
+    },
+    {
+        "Type": "Cargo van",
+        "Purpose": "Small jobs",
+        "price": "39$",
+        "Image": "https://www.uhaul.com/Reservations/Images/Equipment/Trucks/uhaul-cargo-van.png"
+    },
+    {
+        "Type": "10' truck",
+        "Purpose": "Studio to 1 bedroom apt.",
+        "price": "49$",
+        "Image": "https://www.uhaul.com/Reservations/Images/Equipment/Trucks/10Large.png"
+    },
+    {
+    "Type": "15' truck",
+    "Purpose": "1 Bedroom Home to 2 Bedroom Apt.",
+    "price": "59$",
+    "Image": "https://www.uhaul.com/Reservations/Images/Equipment/Trucks/14Large.png"
+    }
+]

@@ -1,0 +1,111 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+
+body {
+    background: whitesmoke;
+}
+
+i {
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+nav {
+    margin: 0;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    padding: .5rem;
+    border-bottom: 1px solid grey;
+    background-color: orangered;
+    & .menu-left-wrapper {
+        display: flex;
+        gap: 1.1em;
+        &__company-name {
+            color: #fff;
+        }
+    }
+    & .menu-right-wrapper {
+        display: flex;
+        gap: 1.3em;
+                
+    }
+}
+
+.top-img-wrapper {
+    margin: 0 auto;
+    padding: 1em 1em 6em 1em;
+    background: url("https://movingwaldo.com/wp-content/uploads/elementor/thumbs/Truck-rental-Manchester-New-Hampshire-p6e88tgfg25b2uco2mjtihrvr196aiozb8j66qoynk.jpg");
+    height: 100px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    color:orangered;
+    & h1 {
+        margin: 1em auto;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.739);
+    }
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    & .presentation-headline {
+        margin: 1em;
+        font-size: 1.125rem;
+    }
+    & .presentation-text {
+        color: rgb(83, 83, 83);
+    }
+    
+}
+
+.trucks-wrapper {
+    margin-top: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    flex-wrap: wrap;
+    & .truck {
+        &__type {
+            font-weight: 550;
+        }
+        &__price {
+            color:rgb(88, 88, 88);
+        }
+        &:hover, &:focus {
+            background-color: rgba(255, 68, 0, 0.74);
+        }
+        &__img {
+            max-width: 100%;
+        }
+        &__choose-btn {
+            cursor: pointer;
+            background-color: #fff;
+            color: orangered;
+            font-weight: 600;
+            margin: .3em;
+            padding: .4em .7em;
+            border: 1px solid grey;
+        }
+    }
+}
+
+@media (min-width: 640px) {
+    .top-img-wrapper {
+        background-color: #fff;
+        // width: 60%;
+        height: 15em;
+        margin: 0 auto;
+    }
+
+}
