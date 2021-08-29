@@ -5,7 +5,7 @@ function login(email: string, password: string) {
             console.log(res);
             localStorage.setItem('token', JSON.stringify(res.token))
             alert('Login successful')
-            location.replace("store.html")
+            location.replace("adminStore.html")
         }).catch(error => console.log(error))
 }
 

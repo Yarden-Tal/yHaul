@@ -5,7 +5,7 @@ function login(email, password) {
         console.log(res);
         localStorage.setItem('token', JSON.stringify(res.token));
         alert('Login successful');
-        location.replace("store.html");
+        location.replace("adminStore.html");
     })["catch"](function (error) { return console.log(error); });
 }
 function handleSubmit(event) {
