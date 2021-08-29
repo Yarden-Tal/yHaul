@@ -1,7 +1,9 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
-  }
+}
 
 body {
     background: whitesmoke;
@@ -21,17 +23,23 @@ nav {
     padding: .5rem;
     border-bottom: 1px solid grey;
     background-color: orangered;
+
     & .menu-left-wrapper {
         display: flex;
         gap: 1.1em;
-        &__company-name {
+        align-items: center;
+
+        &__company-name>img {
             color: #fff;
+            max-width: 10%;
         }
     }
+
     & .menu-right-wrapper {
         display: flex;
+        align-items: center;
         gap: 1.3em;
-                
+
     }
 }
 
@@ -48,15 +56,18 @@ main {
 }
 
 .truck {
+    filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
     border: 1px solid rgba(128, 128, 128, 0);
     width: 100vw;
     padding: 3em;
+
     &__img {
         & img {
             width: 300px;
             max-width: 100%;
         }
     }
+
     &__choose-btn {
         cursor: pointer;
         background-color: #fff;

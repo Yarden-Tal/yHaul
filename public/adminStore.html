@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/9e08100192.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/236322427_525927985151454_1950170483012406312_n.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/dist/adminStore.css">
+    <title>y-haul</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-left-wrapper">
+                <div class="menu-left-wrapper__burger-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="menu-left-wrapper__company-name">
+                    <img src="./images/236322427_525927985151454_1950170483012406312_n.jpg" alt="y-haul logo">
+                </div>
+            </div>
+            <div class="menu-right-wrapper">
+                <div class="menu-right-wrapper__search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="menu-right-wrapper__cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="top-img-wrapper">
+            <h1>Moving Made Easier®</h1>
+        </div>
+    </header>
+    <main>
+        <div class="add-section">
+            <h3>Add a truck</h3>
+            <form class="add-section__form" onsubmit="handleAdd(event)">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="price" id="price" placeholder="Price">
+                <input type="text" name="img" id="img" placeholder="Image URL">
+                <button class="add-submit-btn" type="submit">
+                    Add
+                </button>
+            </form>
+        </div>
+        <div class="edit-modal-wrapper hide">
+            <form onsubmit="handleEditSubmit(event)" class="edit-modal">
+                <h4>Edit item</h4>
+                <label for="image-edit">Image URL</label>
+                <input type="text" name="image-edit" id="image-edit">
+                <label for="type-edit">Type</label>
+                <input type="text" name="type-edit" id="type-edit">
+                <label for="price-edit">Price</label>
+                <input type="number" name="price-edit" id="price-edit">
+                <input type="hidden" name="id-edit" id="id-edit">
+                <button class="edit-modal__button" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="trucks-wrapper">
+            <!-- Trucks go here -->
+        </div>
+    </main>
+
+    <script src="./scripts/adminStore.js"></script>
+</body>
+
+</html>

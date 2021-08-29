@@ -1,7 +1,9 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
-  }
+}
 
 body {
     background: whitesmoke;
@@ -21,17 +23,22 @@ nav {
     padding: .5rem;
     border-bottom: 1px solid grey;
     background-color: orangered;
+
     & .menu-left-wrapper {
         display: flex;
         gap: 1.1em;
-        &__company-name {
+        align-items: center;
+
+        &__company-name>img {
             color: #fff;
+            max-width: 10%;
         }
     }
+
     & .menu-right-wrapper {
         display: flex;
         gap: 1.3em;
-                
+
     }
 }
 
@@ -49,16 +56,22 @@ nav {
     flex-direction: column;
     gap: 1em;
     width: 100%;
+
     & label {
         color: orangered;
         padding: 0.5em;
+        font-weight: bold;
+        filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
         border-bottom: 1px solid rgba(128, 128, 128, 0.349);
     }
+
     & input {
+        filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
         width: 65%;
         text-align: center;
         padding: 0.5em;
     }
+
     & button {
         margin-top: 2em;
         width: 5em;
@@ -66,12 +79,15 @@ nav {
         border-radius: 15%;
         background: rgba(255, 68, 0, 0.87);
         color: #fff;
+        filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
+        cursor: pointer;
     }
 }
 
 
 .img-wrapper {
     display: flex;
+
     & img {
         margin: 1em auto;
         max-width: 100%;

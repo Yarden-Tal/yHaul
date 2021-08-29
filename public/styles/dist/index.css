@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   margin: 0;
 }
@@ -25,19 +27,26 @@ nav {
 nav .menu-left-wrapper {
   display: flex;
   gap: 1.1em;
+  align-items: center;
 }
-nav .menu-left-wrapper__company-name {
+nav .menu-left-wrapper__company-name > img {
   color: #fff;
+  max-width: 10%;
 }
 nav .menu-right-wrapper {
   display: flex;
   gap: 1.3em;
 }
 
-.headline {
-  color: #424242;
-  text-align: center;
-  margin: 1em;
+.welcome-pic-wrapper {
+  width: 260px;
+  max-width: 45%;
+  margin: 2em auto;
+  filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
+}
+.welcome-pic-wrapper .welcome-pic {
+  max-width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.301);
 }
 
 .links-wrapper {
@@ -57,17 +66,21 @@ nav .menu-right-wrapper {
 .links-wrapper__register {
   background-color: orangered;
   color: white;
+  filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
 }
 .links-wrapper__login {
   background-color: green;
   color: #fff;
+  filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
 }
 
 .img-wrapper {
   display: flex;
+  margin: 0 auto;
+  max-width: 600px;
 }
 .img-wrapper img {
-  margin: 6em auto;
+  margin: 3em auto;
   max-width: 100%;
   opacity: 15%;
 }

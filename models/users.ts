@@ -1,5 +1,6 @@
 import { CartItem } from './cart';
 import { Truck } from './trucks';
+const { v4: uuidv4 } = require('uuid');
 
 export class User {
     email: string
@@ -10,5 +11,6 @@ export class User {
         this.email = email
         this.password = password
         this.cart = cart
+        this.id = uuidv4()
     }
 }

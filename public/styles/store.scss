@@ -1,7 +1,9 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
     margin: 0;
-  }
+}
 
 body {
     background: whitesmoke;
@@ -21,17 +23,23 @@ nav {
     padding: .5rem;
     border-bottom: 1px solid grey;
     background-color: orangered;
+
     & .menu-left-wrapper {
         display: flex;
         gap: 1.1em;
-        &__company-name {
+        align-items: center;
+
+        &__company-name>img {
             color: #fff;
+            max-width: 10%;
         }
     }
+
     & .menu-right-wrapper {
         display: flex;
+        align-items: center;
         gap: 1.3em;
-                
+
     }
 }
 
@@ -44,7 +52,8 @@ nav {
     background-repeat: repeat;
     background-size: cover;
     position: relative;
-    color:orangered;
+    color: orangered;
+
     & h1 {
         margin: 1em auto;
         font-size: 1.5rem;
@@ -57,14 +66,16 @@ main {
     margin: 0 auto;
     width: 80%;
     text-align: center;
+
     & .presentation-headline {
         margin: 1em;
         font-size: 1.125rem;
     }
+
     & .presentation-text {
         color: rgb(83, 83, 83);
     }
-    
+
 }
 
 .trucks-wrapper {
@@ -75,19 +86,27 @@ main {
     align-items: center;
     gap: 4em;
     flex-wrap: wrap;
+
     & .truck {
+        filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
+
         &__type {
             font-weight: 550;
         }
+
         &__price {
-            color:rgb(88, 88, 88);
+            color: rgb(1, 121, 7);
         }
-        &:hover, &:focus {
+
+        &:hover,
+        &:focus {
             background-color: rgba(255, 68, 0, 0.74);
         }
+
         &__img {
             max-width: 100%;
         }
+
         &__choose-btn {
             cursor: pointer;
             background-color: #fff;

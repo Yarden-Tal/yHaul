@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   margin: 0;
 }
@@ -25,12 +27,15 @@ nav {
 nav .menu-left-wrapper {
   display: flex;
   gap: 1.1em;
+  align-items: center;
 }
-nav .menu-left-wrapper__company-name {
+nav .menu-left-wrapper__company-name > img {
   color: #fff;
+  max-width: 10%;
 }
 nav .menu-right-wrapper {
   display: flex;
+  align-items: center;
   gap: 1.3em;
 }
 
@@ -47,6 +52,7 @@ main {
 }
 
 .truck {
+  filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
   border: 1px solid rgba(128, 128, 128, 0);
   width: 100vw;
   padding: 3em;

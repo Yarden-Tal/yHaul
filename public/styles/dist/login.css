@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   margin: 0;
 }
@@ -25,9 +27,11 @@ nav {
 nav .menu-left-wrapper {
   display: flex;
   gap: 1.1em;
+  align-items: center;
 }
-nav .menu-left-wrapper__company-name {
+nav .menu-left-wrapper__company-name > img {
   color: #fff;
+  max-width: 10%;
 }
 nav .menu-right-wrapper {
   display: flex;
@@ -52,9 +56,12 @@ nav .menu-right-wrapper {
 #login-form label {
   color: orangered;
   padding: 0.5em;
+  font-weight: bold;
+  filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
   border-bottom: 1px solid rgba(128, 128, 128, 0.349);
 }
 #login-form input {
+  filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
   width: 65%;
   text-align: center;
   padding: 0.5em;
@@ -66,6 +73,8 @@ nav .menu-right-wrapper {
   border-radius: 15%;
   background: rgba(255, 68, 0, 0.87);
   color: #fff;
+  filter: drop-shadow(-2px 1px 4px rgba(48, 48, 48, 0.541));
+  cursor: pointer;
 }
 
 .img-wrapper {
