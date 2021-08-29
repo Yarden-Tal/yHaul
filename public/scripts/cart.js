@@ -6,6 +6,5 @@ var purchase = function (event) {
     if (confirm)
         alert('Thank you for your purchase at y-Haul!');
     confirm('Would you like to print your order summary?');
-    if (confirm)
-        window.print();
+    window.print();
 };

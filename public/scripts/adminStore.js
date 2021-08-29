@@ -132,6 +132,10 @@ var handleEdit = function (id) {
     var idToEdit = document.querySelector('#id-edit');
     idToEdit.value = id;
 };
+var closeEditModal = function () {
+    var editModal = document.querySelector('.edit-modal-wrapper');
+    editModal.classList.add('hide');
+};
 var handleEditSubmit = function (event) { return __awaiter(_this, void 0, void 0, function () {
     var type, price, image, id, res;
     return __generator(this, function (_a) {
@@ -145,10 +149,10 @@ var handleEditSubmit = function (event) { return __awaiter(_this, void 0, void 0
                 return [4 /*yield*/, axios.put("/trucks/" + id, { type: type, price: price, image: image })];
             case 1:
                 res = _a.sent();
-                console.log(res);
                 return [4 /*yield*/, renderTrucksAsAdmin()];
             case 2:
                 _a.sent();
+                closeEditModal();
                 return [2 /*return*/];
         }
     });

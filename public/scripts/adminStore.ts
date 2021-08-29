@@ -71,6 +71,11 @@ const handleEdit = (id: string) => {
     idToEdit.value = id
 }
 
+const closeEditModal = () => {
+    const editModal = document.querySelector('.edit-modal-wrapper')
+    editModal.classList.add('hide')
+}
+
 const handleEditSubmit = async (event) => {
     event.preventDefault()
     const type = event.target.elements['type-edit'].value
@@ -78,6 +83,6 @@ const handleEditSubmit = async (event) => {
     const image = event.target.elements['image-edit'].value
     const id = event.target.elements['id-edit'].value
     const res = await axios.put(`/trucks/${id}`, { type, price, image })
-    console.log(res);
     await renderTrucksAsAdmin()
+    closeEditModal()
 }

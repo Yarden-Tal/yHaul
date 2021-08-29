@@ -33,6 +33,11 @@ nav .menu-left-wrapper__company-name > img {
   color: #fff;
   max-width: 10%;
 }
+nav .menu-left-wrapper__link {
+  color: white;
+  padding: 0.3em 0.2em;
+  background-color: rgba(0, 0, 0, 0.726);
+}
 nav .menu-right-wrapper {
   display: flex;
   align-items: center;
